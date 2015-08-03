@@ -18,6 +18,15 @@ describe('metaFor', function() {
       meta.foobar = true;
     });
   });
+  it('should create non-enumberable meta', function() {
+    let obj = {};
+    metaFor(obj); // create the meta object
+    var enumberableKeys = [];
+    for (var key in obj) {
+      enumberableKeys.push(key);
+    }
+    assert(enumberableKeys.length === 0);
+  });
 });
 
 describe('setMeta', function() {

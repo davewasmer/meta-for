@@ -1,5 +1,5 @@
 # meta-for [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Get and set private or meta properties via Symbols
+> Get and set your own un-collidable meta properties on objects. Powered by Symbols.
 
 
 ## Install
@@ -19,6 +19,12 @@ let meta = metaFor(obj); // meta is writable
 meta.someMetaProperty = true;
 let meta = metaFor(obj, true); // meta is read-only
 meta.someMetaProperty === true
+
+for (var prop in obj) {
+  // The meta property won't appear here!
+  // It's also impossible to collide with another property,
+  // thanks to the magic of Symbols
+}
 ```
 
 
