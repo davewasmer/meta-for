@@ -1,9 +1,9 @@
 {
-  "name": "metaprop",
+  "name": "meta-for",
   "version": "0.0.0",
   "description": "Get and set private or meta properties via Symbols",
-  "homepage": "https://github.com/davewasmer/metaprop",
-  "repository": "davewasmer/metaprop",
+  "homepage": "https://github.com/davewasmer/meta-for",
+  "repository": "davewasmer/meta-for",
   "author": {
     "name": "Dave Wasmer",
     "email": "davewasmer@gmail.com",
