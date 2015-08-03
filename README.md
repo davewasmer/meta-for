@@ -12,14 +12,14 @@ $ npm install --save meta-for
 ## Usage
 
 ```js
-var meta-for = require('meta-for');
+import metaFor from 'meta-for';
 
-meta-for('Rainbow');
+let obj = {};
+let meta = metaFor(obj); // meta is writable
+meta.someMetaProperty = true;
+let meta = metaFor(obj, true); // meta is read-only
+meta.someMetaProperty === true
 ```
-
-## License
-
-MIT © [Dave Wasmer](davewasmer.com)
 
 
 [npm-image]: https://badge.fury.io/js/meta-for.svg
