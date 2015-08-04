@@ -1,6 +1,6 @@
 {
   "name": "meta-for",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get and set your own un-collidable meta properties on objects. Powered by Symbols.",
   "homepage": "https://github.com/davewasmer/meta-for",
   "repository": "davewasmer/meta-for",
